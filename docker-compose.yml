@@ -1,0 +1,9 @@
+version: '2'
+services:
+  apache_with_php:
+    build: .
+    volumes:
+      - .:/var/www/html/
+    ports:
+      - "80:80"
+      - "33215:22"
